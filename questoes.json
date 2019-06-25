@@ -47,5 +47,15 @@ data = [
           "Hazards são situações que param o pipeline, ou seja, impedem que a próxima instrução do pipeline seja executada no mesmo ciclo de clock."
       ],
       "resposta": "2"
+  },
+  {
+      "pergunta": "Qual é a maior vantagem de uma arquitetura pipeline?",
+      "opcoes": [
+          "O conjunto de instruções necessário é menor.",
+          "A eficiência é aumentada visto que é possivel executar partes de diferentes instruções no mesmo ciclo de clock.",
+          "O circuito utilizado para sua implementação é muito simples em comparação com outras arquiteturas.",
+          "Não existem problemas de dependência em arquiteturas pipeline."
+      ],
+      "resposta": "1"
   } 
 ];
