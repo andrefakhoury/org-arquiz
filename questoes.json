@@ -18,5 +18,35 @@ data = [
       "aquele treco de hd old"
     ],
     "resposta": "3"
+  },
+  {
+      "pergunta": "Qual é a principal função do módulo de Entrada e Saída?",
+      "opcoes": [
+          "Intermediar a comunicação entre a memória e os dispositivos de Entrada e Saída.", 
+          "Exibir o output e receber o input do usuário.",
+          "Acelerar as tarefas do processador."
+      ],
+      "resposta": "3"
+  },
+  {
+      "pergunta": "O que define uma arquitetura do tipo RISC?",
+      "opcoes": [
+          "Um conjunto de instruções muito complexas.",
+          "Um conjunto grande de instruções simples.",
+          "Um conjunto pequeno de instruções simples.",
+          "Todas as instruções possuem tamanho fixo.",
+          "Instruções com tempo de execução variável."
+      ],
+      "resposta": "4"
+  },
+  {
+      "pergunta": "O que são hazards de pipeline?",
+      "opcoes": [
+          "Hazards são dependências entre instruções na execução de um programa.",
+          "Hazards são erros de leitura da memória na execução de instruções como Store word ou Load word.",
+          "Hazards são situações que param o pipeline, ou seja, impedem que a próxima instrução do pipeline seja executada no mesmo ciclo de clock."
+      ],
+      "resposta": "3"
+  } 
   }
 ];
