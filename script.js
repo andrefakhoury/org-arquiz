@@ -101,6 +101,7 @@ function responder() {
 
 	if (respondido) {
         caixa.className = "correct";
+        pontos++;
 	} else {
         caixa.className = "wrong";
     }
