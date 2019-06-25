@@ -57,5 +57,24 @@ data = [
           "Não existem problemas de dependência em arquiteturas pipeline."
       ],
       "resposta": "1"
+  },
+  {
+      "pergunta": "Quanto a eficiência de memórias primária e secundária, o que é verdadeiro?",
+      "opcoes": [
+          "A memória primária é mais lenta que a memória secundária.",
+          "A memória primária é mais rápida que a memória secundária, mas apenas em operações de escrita.",
+          "A memória primária é mais rápida que a memória secundária, como um todo.",
+          "A memória primária é mais rápida que a memória secundária. No entanto, como a memória secundária pode ser acessada diretamente pelo processador, ela pode vir a ser mais rápida em algumas situações"
+      ],
+      "resposta": "2"
+  },
+  {
+      "pergunta": "Em uma arquitetura pipeline, qual é o papel da forwarding unit?",
+      "opcoes": [
+          "Adiantar o ciclo de clock atual, ou seja, acelerá-lo.",
+          "Adiantar resultados calculados em ciclos de clock anteriores ao ciclo de clock atual.",
+          "Adiantar dados vindos da memória, isto é, utilizar uma memória cache de forma que seja mais fácil a busca por um dado."
+      ],
+      "resposta": "1"
   } 
 ];
