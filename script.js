@@ -19,7 +19,7 @@ function shuffle(array) {
 }
 
 var questoes, ordem;
-var curQuestao, pontos;
+var curQuestao, pontos, qttQuestao;
 
 function comecarJogo() {
 	questoes = JSON.parse(data);
@@ -28,9 +28,18 @@ function comecarJogo() {
 	for (var i = 0; i < questoes.length; i++) {
 		ordem.push(i);
 	}
+
 	ordem = shuffle(ordem);
 
 	pontos = 0;
+	qttQuestao = Math.min(questoes.length, 10);
+
+	document.getElementById("container").style.visibility = "visible";
+	document.getElementById("iniciar").style.visibility = "hidden";
+
+	document.getElementById("container").innerHTML = '<div id="pontuacao">Pontos: 0</div>'+
+													 '<div id="questao" class="questao"></div>';
+
 	document.getElementById("pontuacao").innerHTML = "Pontos: " + pontos;
 
 	curQuestao = -1;
@@ -38,13 +47,29 @@ function comecarJogo() {
 }
 
 function encerrar() {
-	document.getElementById("questao").innerHTML = "Acabou! Voce fez " + pontos + " pontos";
+	var elem = document.getElementById("questao");
+	elem.innerHTML = '<b>Acabou!</b> Voce fez <b>' + pontos + ' pontos</b>, de ' + qttQuestao + ' possíveis.<hr id="final">';
+
+	var porcentagem = pontos/qttQuestao;
+
+	if (porcentagem == 1) {
+		elem.innerHTML += "O cara é bom! Gabaritou tudin :)";
+	} else if (porcentagem >= 0.5) {
+		elem.innerHTML += "Show, passou sem rec!";
+	} else if (porcentagem >= 0.3) {
+		elem.innerHTML += "Quebrou o pré, mas dava pra ter ido melhor..."
+	} else {
+		elem.innerHTML += "Tá reprovado, vai ter q fazer de novo kk";
+	}
+
+	elem.innerHTML += '<br><button onclick="comecarJogo();">Recomeçar</button>';
+
 }
 
 function perguntar() {
 	curQuestao += 1;
 
-	if (curQuestao >= questoes.length) {
+	if (curQuestao >= qttQuestao) {
 		encerrar();
 		return;
 	}

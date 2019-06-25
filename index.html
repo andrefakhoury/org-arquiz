@@ -7,10 +7,24 @@
 	<link rel="stylesheet" type="text/css" href="style.css"/>
 </head>
 <body>
-	<h1>Bem vindo ao quiz! Clique no botão abaixo para começar!</h1><br>
-	<button onclick="comecarJogo()">Comecar</button>
+	<center>
 
-	<div id="pontuacao">Pontos: 0</div>
-	<div id="questao" class="questao"></div>
+		<div id="header">
+			<h1>OrgArQuiz</h1>
+			<h3>O quiz de organização e arquitetura de computadores original</h3>
+		</div>
+
+		<div id="iniciar" style="visibility: visible;">
+			<button onclick="comecarJogo()">Comecar</button>
+		</div>
+
+		<div id="container" style="visibility: hidden;"></div>
+
+		<div id="footer">
+			<hr>
+			Feito por André Fakhoury, David Cairuz, Gustavo Soares e Thiago Preischadt
+		</div>
+
+	</center>
 </body>
 </html>

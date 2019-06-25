@@ -3,12 +3,61 @@ body {
 	font-family: arial, sans-serif;
 }
 
-#questao {
+hr {
+	 border-top: 1px dashed navy;
+	 border-bottom: 0px;
+}
+
+hr#final {
+	 border-top: 1px solid navy;
+	 border-bottom: 0px;
+}
+
+button {
+	-webkit-transition-duration: 0.2s; /* Safari */
+	transition-duration: 0.2s;
+
+	background-color: #0061ff; /* Green */
+	border: none;
+	color: white;
+	padding: 5px 10px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+}
+
+button:hover {
+	background-color: #5998ff; /* Green */
+	color: white;
+	cursor: all-scroll;
+}
+
+#footer {
+	width: 100%;
 	float: left;
-	margin: 5px;
-	width: 940px;
+	position: center;
+	text-align: center;
+}
+
+#header {
+	padding: 1px;
+	background-color: #c6dcff;
+}
+
+#container {
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 5px;
+	padding-right: 5px;
+
+	/*float: left;*/
+	width: 70%;
 	background-color: #dae3f2;
 	border-radius: 5px;
+}
+
+#questao {
 }
 
 #pergunta {
@@ -17,4 +66,8 @@ body {
 
 #pergunta:hover {
 	background-color: #adccff;
+}
+
+#pontuacao {
+	font-weight: bold;
 }
