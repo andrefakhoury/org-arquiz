@@ -45,6 +45,26 @@ button:hover {
 	background-color: #c6dcff;
 }
 
+@keyframes correct {
+    0%{
+        background-color: #93ef8f
+    }
+
+    100%{
+        background-color: #dae3f2
+    }
+}
+
+@keyframes wrong {
+    0%{
+        background-color: #ef7b69
+    }
+
+    100%{
+        background-color: #dae3f2
+    }
+}
+
 #container {
 	padding-top: 5px;
 	padding-bottom: 5px;
@@ -57,10 +77,19 @@ button:hover {
 	border-radius: 5px;
 }
 
+#container.correct {
+    animation: correct 1s 1
+}
+
+#container.wrong {
+    animation: wrong 1s 1
+}
+
 #questao {
 }
 
 #pergunta {
+    text-align: justify;
 	padding: 1px;
 }
 

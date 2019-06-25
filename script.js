@@ -95,11 +95,16 @@ function perguntar() {
 
 function responder() {
 	var respondido = document.getElementById(questoes[ordem[curQuestao]].resposta).checked;
+    var caixa = document.getElementById("container");
+
+    setTimeout(function(){ caixa.className = ""}, 1000);
 
 	if (respondido) {
-		pontos++;
-	}
-
+        caixa.className = "correct";
+	} else {
+        caixa.className = "wrong";
+    }
+    
 	document.getElementById("pontuacao").innerHTML = "Pontos: " + pontos;
 
 	perguntar();
