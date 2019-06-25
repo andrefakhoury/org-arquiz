@@ -4,5 +4,17 @@ body {
 }
 
 #questao {
-	background-color: #ccd9ff;
+	float: left;
+	margin: 5px;
+	width: 940px;
+	background-color: #dae3f2;
+	border-radius: 5px;
+}
+
+#pergunta {
+	padding: 1px;
+}
+
+#pergunta:hover {
+	background-color: #adccff;
 }

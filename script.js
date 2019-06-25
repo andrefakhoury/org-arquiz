@@ -49,16 +49,21 @@ function perguntar() {
 		return;
 	}
 
-	var conteudo = '<h2>' + questoes[ordem[curQuestao]].pergunta + '</h2><br><form>';
+	var conteudo = '<h2>' + (curQuestao+1) + ') ' + questoes[ordem[curQuestao]].pergunta + '</h2>';
+
+	if (questoes[ordem[curQuestao]].imagem != null)
+		conteudo += '<img src="' + questoes[ordem[curQuestao]].imagem + '">';
+
+	conteudo += '<br><form>';
 
 	var cur = questoes[ordem[curQuestao]];
 	for (var j = 0; j < cur.opcoes.length; j++) {
-		conteudo += '<input type="radio" id="' + j + '" name="resp" value="' + cur.opcoes[j] + '">' + cur.opcoes[j] + '<br>';
+		conteudo += '<div id="pergunta"><input type="radio" id="' + j + '" name="resp" value="' + cur.opcoes[j] + '">' + '<label for="' + j + '">' + cur.opcoes[j] + '</label></div>';
 	}
 	
 	conteudo += "</form>"
 
-	conteudo += '<button onclick="responder()">Responder</button>';
+	conteudo += '<br><button onclick="responder()">Responder</button>';
 
 	document.getElementById("questao").innerHTML = conteudo;
 }
