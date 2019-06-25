@@ -44,7 +44,7 @@ data = [
       "opcoes": [
           "Hazards são dependências entre instruções na execução de um programa.",
           "Hazards são erros de leitura da memória na execução de instruções como Store word ou Load word.",
-          "Hazards são situações que param o pipeline, ou seja, impedem que a próxima instrução do pipeline seja executada no mesmo ciclo de clock."
+          "Hazards são situações que param o pipeline, ou seja, impedem que a próxima instrução do pipeline seja executada no ciclo de clock correto."
       ],
       "resposta": "2"
   },
@@ -69,12 +69,23 @@ data = [
       "resposta": "2"
   },
   {
-      "pergunta": "Em uma arquitetura pipeline, qual é o papel da forwarding unit?",
+      "pergunta": "Em uma arquitetura pipeline, qual é o papel da forwarding unit (unidade de adiantamento)?",
       "opcoes": [
           "Adiantar o ciclo de clock atual, ou seja, acelerá-lo.",
           "Adiantar resultados calculados em ciclos de clock anteriores ao ciclo de clock atual.",
           "Adiantar dados vindos da memória, isto é, utilizar uma memória cache de forma que seja mais fácil a busca por um dado."
       ],
       "resposta": "1"
-  } 
+  }, 
+  {
+      "pergunta": "Em uma arquitetura pipeline, qual é o papel da unidade de controle?",
+      "opcoes": [
+          "A unidade de controle está encarregada de garantir que não haja dessincronização de clock.",
+          "A unidade de controle é encarregada de interligar os componentes da arquitetura.",
+          "A unidade de controle controla o clock.",
+          "A unidade de controle só possui uma função: controlar as unidades de adiantamento e detecção de hazards.",
+          "A unidade de controle é encarregada de reger os sinais de controle da arquitetura."
+      ],
+      "resposta": "4"
+  }
 ];
