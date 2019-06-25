@@ -1,8 +1,22 @@
-data = '[{"pergunta" : "o q q eh o pipeline", ' +
-	'"opcoes" : ["um jeito de empinar pipa", "marca de miojo", "aquela parada q a sarita explicou"], ' +
-	'"resposta" : "2",' +
-	'"imagem" : "images/aoba.jpg"},' +
-
-	'{"pergunta" : "q q eh pata",'+
-	'"opcoes" : ["ih rapaz", "kkkk", "um pino", "aquele treco de hd old"], ' +
-	'"resposta" : "3"}]';
+data = [
+  {
+    "pergunta": "o q q eh o pipeline",
+    "opcoes": [
+      "um jeito de empinar pipa",
+      "marca de miojo",
+      "aquela parada q a sarita explicou"
+    ],
+    "resposta": "2",
+    "imagem": "images/aoba.jpg"
+  },
+  {
+    "pergunta": "q q eh pata",
+    "opcoes": [
+      "ih rapaz",
+      "kkkk",
+      "um pino",
+      "aquele treco de hd old"
+    ],
+    "resposta": "3"
+  }
+];

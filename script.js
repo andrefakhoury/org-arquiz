@@ -22,7 +22,7 @@ var questoes, ordem;
 var curQuestao, pontos, qttQuestao;
 
 function comecarJogo() {
-	questoes = JSON.parse(data);
+	questoes = data;
 
 	ordem = [];
 	for (var i = 0; i < questoes.length; i++) {
