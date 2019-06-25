@@ -26,7 +26,7 @@ data = [
           "Exibir o output e receber o input do usuário.",
           "Acelerar as tarefas do processador."
       ],
-      "resposta": "3"
+      "resposta": "0"
   },
   {
       "pergunta": "O que define uma arquitetura do tipo RISC?",
@@ -37,7 +37,7 @@ data = [
           "Todas as instruções possuem tamanho fixo.",
           "Instruções com tempo de execução variável."
       ],
-      "resposta": "4"
+      "resposta": "2"
   },
   {
       "pergunta": "O que são hazards de pipeline?",
@@ -46,6 +46,6 @@ data = [
           "Hazards são erros de leitura da memória na execução de instruções como Store word ou Load word.",
           "Hazards são situações que param o pipeline, ou seja, impedem que a próxima instrução do pipeline seja executada no mesmo ciclo de clock."
       ],
-      "resposta": "3"
+      "resposta": "2"
   } 
 ];
