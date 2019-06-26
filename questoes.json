@@ -10,16 +10,6 @@ data = [
     "imagem": "images/aoba.jpg"
   },
   {
-    "pergunta": "q q eh pata",
-    "opcoes": [
-      "ih rapaz",
-      "kkkk",
-      "um pino",
-      "aquele treco de hd old"
-    ],
-    "resposta": "3"
-  },
-  {
       "pergunta": "O que define uma arquitetura do tipo RISC?",
       "opcoes": [
           "Um conjunto de instruções muito complexas.",
@@ -35,7 +25,7 @@ data = [
       "opcoes": [
           "Hazards são dependências entre instruções na execução de um programa.",
           "Hazards são erros de leitura da memória na execução de instruções como Store word ou Load word.",
-          "Hazards são situações que param o pipeline, ou seja, impedem que a próxima instrução do pipeline seja executada no ciclo de clock correto."
+          "Hazards são situações em que uma instrução não pode ser executada no ciclo de clock correto devido à falta de um dado necessário ainda não obtido."
       ],
       "resposta": "2"
   },
@@ -68,5 +58,149 @@ data = [
           "A unidade de controle é encarregada de reger os sinais de controle da arquitetura."
       ],
       "resposta": "4"
+  },
+  {
+      "pergunta": "O que é pipelining?",
+      "opcoes": [
+          "É a implementação de uma técnica em que múltiplas instruções são executadas sequencialmente.",
+          "É a implementação de uma técnica em que uma única instrução é executada em diversos estágios.",
+          "É a implementação de uma técnica em que múltiplas instruções são sobrepostas durante a execução.",
+          "É a implementação de uma técnica em que múltiplas instruções são executadas de maneira assíncrona."
+      ],
+      "resposta": "2"
+  },
+  {
+      "pergunta": "Na ordem, quais são os estágios da implementação pipeline de uma arquitetura MIPS?",
+      "opcoes": [
+          "Instruction Fetch, Instruction Decode, Execution, Memory Access, Write-back.",
+          "Instruction Formatting, Instruction Decode, Execution, Memory Allocation, Write-back.",
+          "Instruction Fetch, Instruction Decode, Execution, Memory Access, Write-binary",
+          "Instruction Fetch, Instruction Decode, Memory Access, Execution, Write-back."
+      ],
+      "resposta": "0"
+  },
+  {
+      "pergunta": "Na arquitetura pipeline, o que caracteriza uma bolha (ou pipeline-stall)?",
+      "opcoes": [
+          "É uma parada iniciada com a intenção de resolver um hazard.",
+          "É uma parada não intencional do pipeline.",
+          "É um método de otimização do pipeline.",
+          "Uma bolha é uma instrução não pode ser executada no ciclo de clock correto devido à falta de um dado necessário ainda não obtido."
+      ],
+      "resposta": "0"
+  },
+  {
+      "pergunta": "Um processador sem hazards estruturais é:",
+      "opcoes": [
+          "Mais lento.",
+          "Mais rápido.",
+          "Possui ciclo de clock mais longo.",
+          "Possui taxa de clock mais alta."
+      ],
+      "resposta": "1"
+  },
+  {
+      "pergunta": "Se um evento ocorre no mesmo lugar toda vez que um programa é executado com os mesmos dados e alocação de memória, esse evento é:",
+      "opcoes": [
+          "Assíncrono.",
+          "Síncrono.",
+          "Atrasado.",
+          "Parado."
+      ],
+      "resposta": "1"
+  },
+  {
+      "pergunta": "Em uma arquitetura de três caches. Dentre as relações de grandeza entre as diferentes caches, qual está correta?",
+      "opcoes": [
+          "L3 > L1 > L2",
+          "L1 > L2 > L3",
+          "L1 > L3 > L2",
+          "L3 > L2 > L1"
+      ],
+      "resposta": "3"
+  },
+  {
+      "pergunta": "Um algoritmo de substituição em caches que remove o elemento menos recentemente utilizado recebe qual sigla?",
+      "opcoes": [
+          "FIFO.",
+          "LRU.",
+          "LFU.",
+          "Aleatório."
+      ],
+      "resposta": "1"
+  },
+  {
+      "pergunta": "Um algoritmo de substituição em caches que remove o elemento menos frequentemente utilizado recebe qual sigla?",
+      "opcoes": [
+          "FIFO.",
+          "LRU.",
+          "LFU.",
+          "Aleatório."
+      ],
+      "resposta": "2"
+  },
+  {
+      "pergunta": "No que tange os acessos à memórias cache, o caracteriza um acerto?",
+      "opcoes": [
+          "A palavra buscada não é encontrada na cache.",
+          "A inserção de uma palavra na cache é feita com sucesso.",
+          "A palavra buscada é encontrada na cache.",
+          "A inserção de uma palavra na cache substitui uma palavra ja existente nela."
+      ],
+      "resposta": "2"
+  },
+  {
+      "pergunta": "O que define a função de mapeamento direto em memórias cache?",
+      "opcoes": [
+          "Cada bloco na memória principal é mapeado em um único bloco da cache.",
+          "Um bloco da memória principal pode ser carregado em qualquer bloco da memória cache.",
+          "A memória cache é dividida em V conjuntos de K blocos cada e cada bloco da memória principal sempre é mapeado em um único conjunto."
+      ],
+      "resposta": "1"
+  },
+  {
+      "pergunta": "O que define a função de mapeamento associativo em memórias cache?",
+      "opcoes": [
+          "Cada bloco na memória principal é mapeado em um único bloco da cache.",
+          "Um bloco da memória principal pode ser carregado em qualquer bloco da memória cache.",
+          "A memória cache é dividida em V conjuntos de K blocos cada e cada bloco da memória principal sempre é mapeado em um único conjunto."
+      ],
+      "resposta": "0"
+  },
+  {
+      "pergunta": "O que define a função de mapeamento associativo por conjunto em memórias cache?",
+      "opcoes": [
+          "Cada bloco na memória principal é mapeado em um único bloco da cache.",
+          "Um bloco da memória principal pode ser carregado em qualquer bloco da memória cache.",
+          "A memória cache é dividida em V conjuntos de K blocos cada e cada bloco da memória principal sempre é mapeado em um único conjunto."
+      ],
+      "resposta": "2"
+  },
+  {
+      "pergunta": "O que é o princípio da localidade temporal?",
+      "opcoes": [
+          "Se um dado na memória foi utilizado em um instante, existe a probabilidade dele ser utilizado novamente num instante futuro.",
+          "Se um dado na memória foi utilizado com frequência, ele será utilizado novamente no futuro.",
+          "Se um dado na memória foi utilizado em um instante, ele não será utilizado no futuro."
+      ],
+      "resposta": "0"
+  },
+  {
+      "pergunta": "O que é o princípio da localidade espacial?",
+      "opcoes": [
+          "Se um dado na memória foi utilizado, os dados adjacentes serão os próximos a serem usados.",
+          "Se um dado na memória foi utilizado, não é necessário utilizar os dados das posições adjacentes.",
+          "Se um dado na memória foi utilizado, existe a probabilidade das posições que estão perto serem utilizadas também."
+      ],
+      "resposta": "2"
+  },
+  {
+      "pergunta": "O que pode-se inferir a partir do tamanho da cache?",
+      "opcoes": [
+          "Quanto maior, mais rápida.",
+          "Quanto menor, mais rápida.",
+          "Quanto menor, mais lenta."
+      ],
+      "resposta": "1"
   }
 ];
