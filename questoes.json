@@ -1,15 +1,5 @@
 data = [
   {
-    "pergunta": "o q q eh o pipeline",
-    "opcoes": [
-      "um jeito de empinar pipa",
-      "marca de miojo",
-      "aquela parada q a sarita explicou"
-    ],
-    "resposta": "2",
-    "imagem": "images/aoba.jpg"
-  },
-  {
       "pergunta": "O que define uma arquitetura do tipo RISC?",
       "opcoes": [
           "Um conjunto de instruções muito complexas.",
@@ -202,5 +192,100 @@ data = [
           "Quanto menor, mais lenta."
       ],
       "resposta": "1"
+  },
+  {
+      "pergunta": "O que pode-se inferir a partir do tamanho do bloco da cache?",
+      "opcoes": [
+          "Quanto maior, maior a taxa de acerto.",
+          "Quanto maior, menor a taxa de acerto.",
+          "Quanto maior, mais rápido."
+      ],
+      "resposta": "0"
+  },
+  {
+      "pergunta": "Qual é a relação de tamanho entre os blocos da memória principal e os blocos da memória cache imediatamente acima?",
+      "opcoes": [
+          "Devem possuir o mesmo tamanho.",
+          "Os blocos da memória principal devem ser maiores.",
+          "Os blocos da memória principal devem ser menores.",
+          "Não há relação."
+      ],
+      "resposta": "0"
+  },
+  {
+      "pergunta": "Qual é a maior vantagem de utilizar uma função de mapeamento associativo em memórias cache?",
+      "opcoes": [
+          "Maior simplicidade do conjunto de circuitos necessários para a comparação dos rótulos dos blocos da memória cache.",
+          "Possui baixo custo de implementação.",
+          "É uma técnica simples.",
+          "Garante maior flexibilidade para a escolha do bloco a ser substituído quando um novo bloco é trazido para a memória cache."
+      ],
+      "resposta": "3"
+  },
+  {
+      "pergunta": "Qual é a maior vantagem de utilizar uma função de mapeamento associativo em memórias cache?",
+      "opcoes": [
+          "Maior simplicidade do conjunto de circuitos necessários para a comparação dos rótulos dos blocos da memória cache.",
+          "Possui baixo custo de implementação.",
+          "É uma técnica simples.",
+          "Garante maior flexibilidade para a escolha do bloco a ser substituído quando um novo bloco é trazido para a memória cache."
+      ],
+      "resposta": "3"
+  },
+  {
+      "pergunta": "Qual a desvantagem de se utilizar uma arquitetura com um único ciclo?",
+      "opcoes": [
+          "Possui uma implementação mais complexa àquela de uma arquitetura pipeline.",
+          "É um grande problema quando são consideradas instruções simples.",
+          "O uso do ciclo de clock se torna ineficiente, pois este deve ser do tamanho da instrução mais rápida.",
+          "O uso do ciclo de clock se torna ineficiente, pois este deve ser do tamanho da instrução mais lenta."
+      ],
+      "resposta": "3"
+  },
+  {
+      "pergunta": "O que significa a sigla ULA?",
+      "opcoes": [
+          "Unidade lógica aritmética.",
+          "Unidade lógica assíncrona.",
+          "Unidade linear aritmética."
+      ],
+      "resposta": "0"
+  },
+  {
+      "pergunta": "O que caracterizam as dependências de dados?",
+      "opcoes": [
+          "São casos em que a instrução do clock atual depende dos resultados de instruções anteriores, ainda não completadas.",
+          "São casos em que são feitos acessos simultâneos à memória por 2 ou mais estágios.",
+          "São casos em que a próxima instrução a ser executada não está no endereço subsequente ao da instrução anterior."
+      ],
+      "resposta": "0"
+  },
+  {
+      "pergunta": "O que caracterizam os conflitos estruturais?",
+      "opcoes": [
+          "São casos em que a instrução do clock atual depende dos resultados de instruções anteriores, ainda não completadas.",
+          "São casos em que são feitos acessos simultâneos à memória por 2 ou mais estágios.",
+          "São casos em que a próxima instrução a ser executada não está no endereço subsequente ao da instrução anterior."
+      ],
+      "resposta": "1"
+  },
+  {
+      "pergunta": "O que caracterizam as dependências de controle?",
+      "opcoes": [
+          "São casos em que a instrução do clock atual depende dos resultados de instruções anteriores, ainda não completadas.",
+          "São casos em que são feitos acessos simultâneos à memória por 2 ou mais estágios.",
+          "São casos em que a próxima instrução a ser executada não está no endereço subsequente ao da instrução anterior."
+      ],
+      "resposta": "2"
+  },
+  {
+      "pergunta": "Dentre as seguintes dependências: RAW, WAW, WAR, RAR. Quais representam problemas para o pipeline?",
+      "opcoes": [
+          "Apenas a WAR.",
+          "Todas elas.",
+          "Apenas a RAW.",
+          "Ambas a WAR e a RAW."
+      ],
+      "resposta": "2"
   }
 ];
