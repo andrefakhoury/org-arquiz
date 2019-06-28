@@ -1,3 +1,10 @@
+// JSON com as questoes do quiz
+
+// pergunta: titulo da pergunta
+// opcoes: array, com todas as opcoes de resposta
+// resposta: indice (0-based) da resposta correta
+// imagem: (opcional) endereco relativo da imagem da questao
+
 data = [
   {
       "pergunta": "O que define uma arquitetura do tipo RISC?",

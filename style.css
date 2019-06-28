@@ -1,18 +1,22 @@
+/* Opcoes gerais */
 body {
 	color: black;
 	font-family: arial, sans-serif;
 }
 
+/* Separador de linha */
 hr {
 	 border-top: 1px dashed navy;
 	 border-bottom: 0px;
 }
 
+/* Separador de linha do final do jogo */
 hr#final {
 	 border-top: 1px solid navy;
 	 border-bottom: 0px;
 }
 
+/* Novo design do botao */
 button {
 	-webkit-transition-duration: 0.2s; /* Safari */
 	transition-duration: 0.2s;
@@ -27,12 +31,14 @@ button {
 	font-size: 16px;
 }
 
+/* Opcoes a mais ao passar o mouse sobre o botao */
 button:hover {
 	background-color: #5998ff; /* Green */
 	color: white;
 	cursor: all-scroll;
 }
 
+/* Opcoes do rodape */
 #footer {
 	width: 100%;
 	float: left;
@@ -40,11 +46,13 @@ button:hover {
 	text-align: center;
 }
 
+/* Opcoes do cabecalho */
 #header {
 	padding: 1px;
 	background-color: #c6dcff;
 }
 
+/* Animacao de resposta correta ou incorreta */
 @keyframes correct {
     0%{
         background-color: #93ef8f
@@ -65,6 +73,7 @@ button:hover {
     }
 }
 
+/* Opcoes das perguntas+pontuacao */
 #container {
 	padding-top: 5px;
 	padding-bottom: 5px;
@@ -77,6 +86,7 @@ button:hover {
 	border-radius: 5px;
 }
 
+/* Mais opcoes da animacao */
 #container.correct {
     animation: correct 1s 1
 }
@@ -85,9 +95,7 @@ button:hover {
     animation: wrong 1s 1
 }
 
-#questao {
-}
-
+/* Opcoes especificas da pergunta */
 #pergunta {
     text-align: justify;
 	padding: 1px;
@@ -97,6 +105,7 @@ button:hover {
 	background-color: #adccff;
 }
 
+/* Opcoes da pontuacao */
 #pontuacao {
 	font-weight: bold;
 }
